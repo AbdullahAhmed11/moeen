@@ -1,0 +1,944 @@
+{
+  "app": {
+    "title": "نظام الموارد البشرية",
+    "subtitle": "لوحة الإدارة"
+  },
+  "nav": {
+    "dashboard": "لوحة التحكم",
+    "employees": "الموظفين",
+    "fingerprint": "البصمة",
+    "leave": "إدارة الإجازات",
+    "manager": "تطبيق المدير",
+    "workHoursDeduction": "بيانات خصم ساعات العمل",
+    "workHoursAddition": "بيانات إضافة ساعات العمل",
+    "employeeRegistration": "سجل قيد العاملين",
+    "workInterruption": "بيانات انقطاع العمل",
+    "penalties": "الجزائات",
+    "salaries": "المرتبات",
+    "missions": "المأموريات",
+    "insurance": "تأمينات",
+    "shifts": "ورديات"
+  },
+  "header": {
+    "dashboard": "لوحة التحكم",
+    "welcome": "مرحباً بعودتك — إليك نظرة عامة"
+  },
+  "login": {
+    "companyName": "شركة إم إيه للموارد البشرية",
+    "badge": "بوابة موارد بشرية آمنة",
+    "title": "أدِر فريقك بثقة واحترافية",
+    "subtitle": "سجّل الدخول للوصول إلى سجلات الموظفين والمرتبات والحضور وجميع عمليات الموارد البشرية في مكان واحد.",
+    "formTitle": "مرحباً بعودتك",
+    "formSubtitle": "أدخل بيانات الدخول للمتابعة",
+    "email": "البريد الإلكتروني",
+    "emailPlaceholder": "you@company.com",
+    "password": "كلمة المرور",
+    "passwordPlaceholder": "أدخل كلمة المرور",
+    "showPassword": "إظهار كلمة المرور",
+    "hidePassword": "إخفاء كلمة المرور",
+    "signIn": "تسجيل الدخول",
+    "signingIn": "جاري تسجيل الدخول...",
+    "invalidCredentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة. حاول مرة أخرى.",
+    "demoHint": "تجريبي: admin@mahrc.com / admin123",
+    "features": {
+      "secure": {
+        "title": "وصول آمن",
+        "description": "جلسات محمية تحافظ على أمان بيانات الموارد البشرية."
+      },
+      "fast": {
+        "title": "سير عمل سريع",
+        "description": "انتقل مباشرة إلى لوحات التحكم والسجلات."
+      },
+      "bilingual": {
+        "title": "عربي وإنجليزي",
+        "description": "بدّل اللغة في أي وقت من داخل النظام."
+      }
+    }
+  },
+  "pages": {
+    "emptyDescription": "هذه الصفحة قيد الإنشاء. سيتم إضافة المحتوى قريباً."
+  },
+  "common": {
+    "close": "إغلاق",
+    "cancel": "إلغاء",
+    "softDeleteWarning": "سيتم وضع علامة محذوف على السجل وسيختفي من القائمة."
+  },
+  "filters": {
+    "all": "الكل",
+    "status": "الحالة",
+    "employee": "الموظف",
+    "department": "القسم",
+    "type": "النوع",
+    "method": "الطريقة",
+    "month": "الشهر",
+    "contractType": "نوع العقد",
+    "attendance": "الحضور",
+    "penalties": "الجزاءات",
+    "period": "الفترة",
+    "fromDate": "من تاريخ",
+    "toDate": "إلى تاريخ",
+    "clear": "مسح الفلاتر",
+    "search": "بحث",
+    "searchPlaceholder": "ابحث في الجدول...",
+    "clearSearch": "مسح البحث",
+    "withPenalties": "لديه جزاءات",
+    "withoutPenalties": "بدون جزاءات",
+    "employeeStatus": "حالة الموظف",
+    "activeEmployees": "نشط",
+    "removedEmployees": "محذوف",
+    "blockedEmployees": "محظور",
+    "removedOrBlockedEmployees": "محذوف أو محظور",
+    "checkedIn": "تم تسجيل الدخول",
+    "checkedOut": "تم تسجيل الخروج",
+    "incomplete": "غير مكتمل",
+    "period3m": "آخر 3 أشهر",
+    "period6m": "آخر 6 أشهر",
+    "periodAll": "كل الفترات"
+  },
+  "export": {
+    "pdf": "تصدير PDF",
+    "excel": "تصدير Excel"
+  },
+  "pagination": {
+    "showing": "عرض {{from}}–{{to}} من {{total}}",
+    "rowsPerPage": "صفوف لكل صفحة",
+    "first": "الصفحة الأولى",
+    "previous": "الصفحة السابقة",
+    "next": "الصفحة التالية",
+    "last": "الصفحة الأخيرة",
+    "page": "صفحة {{page}}",
+    "pageOf": "{{current}} / {{total}}",
+    "noResults": "لا توجد نتائج"
+  },
+  "employees": {
+    "total": "{{count}} موظف",
+    "addNew": "إضافة موظف",
+    "table": {
+      "id": "الرقم",
+      "name": "اسم الموظف",
+      "jobTitle": "الوظيفة",
+      "subDepartment": "الإدارة الفرع",
+      "directManager": "المدير المباشر",
+      "salary": "الراتب",
+      "deductions": "الخصومات",
+      "penalties": "الجزاءات",
+      "actions": "الإجراءات"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}",
+      "block": "حظر {{name}}",
+      "unblock": "إلغاء حظر {{name}}",
+      "restore": "استعادة {{name}}"
+    },
+    "badges": {
+      "deleted": "محذوف",
+      "blocked": "محظور"
+    },
+    "form": {
+      "addTitle": "إضافة موظف جديد",
+      "editTitle": "تعديل الموظف",
+      "addSubmit": "إضافة الموظف",
+      "editSubmit": "حفظ التعديلات",
+      "nameEn": "الاسم (إنجليزي)",
+      "nameAr": "الاسم (عربي)",
+      "jobTitleEn": "الوظيفة (إنجليزي)",
+      "jobTitleAr": "الوظيفة (عربي)",
+      "subDepartmentEn": "الإدارة الفرع (إنجليزي)",
+      "subDepartmentAr": "الإدارة الفرع (عربي)",
+      "directManager": "المدير المباشر",
+      "dateOfBirth": "تاريخ الميلاد",
+      "militaryStatus": "الموقف من التجنيد",
+      "healthCertificate": "شهاده الصحه",
+      "idCardImage": "صوره البطاقه",
+      "licenseImage": "صوره الرخصه",
+      "birthCertificateImage": "شهاده الميلاد",
+      "maritalStatus": "الحاله الاجتماعيه"
+    },
+    "documents": {
+      "title": "المستندات والصور",
+      "uploadHint": "اضغط لرفع الصورة",
+      "uploadFormats": "JPG, PNG, WEBP — بحد أقصى 5 ميجا",
+      "browse": "اختر ملف",
+      "remove": "حذف الصورة",
+      "notUploaded": "لم يتم رفع صورة",
+      "invalidType": "يرجى رفع ملف صورة فقط.",
+      "tooLarge": "يجب أن تكون الصورة أقل من 5 ميجا.",
+      "uploadFailed": "فشل رفع الصورة. حاول مرة أخرى."
+    },
+    "militaryStatus": {
+      "completed": "أدى الخدمة",
+      "exempted": "معفى",
+      "postponed": "مؤجل",
+      "not_applicable": "غير مطلوب"
+    },
+    "maritalStatus": {
+      "single": "أعزب",
+      "married": "متزوج",
+      "divorced": "مطلق",
+      "widowed": "أرمل"
+    },
+    "noManager": "لا يوجد مدير",
+    "payroll": {
+      "groups": {
+        "jobData": "بيانات الوظيفة",
+        "compensation": "مقابل الخدمة الشهري",
+        "deductions": "الاستقطاعات"
+      },
+      "cols": {
+        "serial": "م",
+        "jobNumber": "الرقم الوظيفي",
+        "name": "الاسم",
+        "department": "الادارة",
+        "branch": "الفرع",
+        "jobTitle": "الوظيفة",
+        "dailySalary": "الراتب اليومي",
+        "workDays": "عدد الايام",
+        "overtimeHours": "عدد ساعات الاضافي",
+        "representationAllowance": "بدل تمثيل",
+        "total": "الاجمالي",
+        "penalties": "جزاءات",
+        "formula": "المعادله",
+        "fingerprintDeduction": "خصم بصمة",
+        "cashDeduction": "خصم نقدي / تحميل اوردرات",
+        "cashierShortage": "عجز كاشير",
+        "costDeduction": "خصم تكاليف",
+        "temporaryAdvance": "سلف المؤقته",
+        "permanentAdvance": "سلف الدائمة",
+        "socialInsurance": "تأمينات اجتماعية",
+        "netSalary": "صافي الراتب",
+        "signature": "التوقيع",
+        "overtimeValue": "قيمة الاضافي"
+      }
+    },
+    "payslip": {
+      "selectMonth": "الشهر",
+      "jobCode": "الكود الوظيفي",
+      "name": "الأسم",
+      "daysValue": "قيمة عدد الايام",
+      "overtimeHoursShort": "س اضافي",
+      "overtimeValueShort": "القيمة",
+      "totalEarnings": "إجمالي الإستحقاقات",
+      "penaltiesValue": "قيمة الجزاءات",
+      "fingerprintDeductionValue": "قيمة خصم البصمة",
+      "cashDeductionShort": "خصم نقدى",
+      "totalDeductions": "اجمالى الاستقطاعات",
+      "netSalary": "صافي الراتب الشهري",
+      "exportTitle": "قيد المرتب"
+    },
+    "delete": {
+      "title": "حذف الموظف",
+      "message": "هل أنت متأكد من حذف {{name}}؟",
+      "warning": "سيتم وضع علامة محذوف على الموظف وسيبقى في القائمة.",
+      "confirm": "حذف"
+    },
+    "block": {
+      "title": "حظر الموظف",
+      "message": "هل أنت متأكد من حظر {{name}}؟ لن يتمكن من الوصول إلى النظام.",
+      "confirm": "حظر",
+      "unblockTitle": "إلغاء حظر الموظف",
+      "unblockMessage": "هل أنت متأكد من إلغاء حظر {{name}}؟",
+      "unblockConfirm": "إلغاء الحظر"
+    },
+    "restore": {
+      "title": "استعادة الموظف",
+      "message": "هل أنت متأكد من استعادة {{name}}؟ سيتم تفعيله مرة أخرى.",
+      "confirm": "استعادة"
+    },
+    "details": {
+      "back": "العودة للموظفين",
+      "edit": "تعديل",
+      "delete": "حذف",
+      "block": "حظر",
+      "unblock": "إلغاء الحظر",
+      "restore": "استعادة",
+      "netSalary": "صافي الراتب"
+    },
+    "profile": {
+      "email": "البريد الإلكتروني",
+      "phone": "الهاتف",
+      "hireDate": "تاريخ التعيين",
+      "status": "الحالة",
+      "annualBalance": "رصيد الإجازة السنوية",
+      "sickBalance": "رصيد الإجازة المرضية",
+      "tabs": {
+        "overview": "نظرة عامة",
+        "attendance": "الحضور",
+        "leave": "الإجازات",
+        "payroll": "الرواتب",
+        "penalties": "الجزاءات"
+      },
+      "noAttendance": "لا توجد سجلات حضور لهذا الموظف.",
+      "noLeave": "لا توجد طلبات إجازة لهذا الموظف.",
+      "noPayroll": "لا توجد سجلات رواتب لهذا الموظف.",
+      "noPenalties": "لا توجد جزاءات لهذا الموظف."
+    },
+    "status": {
+      "active": "نشط",
+      "on_leave": "في إجازة",
+      "terminated": "منتهي الخدمة"
+    }
+  },
+  "fingerprint": {
+    "hint": "يمكن للموظف تسجيل الحضور والانصراف بالبصمة أو الوجه أو عبر الموبايل مع تحديد الموقع.",
+    "notRecorded": "لم يُسجَّل",
+    "stats": {
+      "total": "إجمالي السجلات",
+      "checkIn": "بصمة الحضور",
+      "checkOut": "بصمة الانصراف",
+      "avgHours": "متوسط ساعات العمل",
+      "mobile": "تسجيل عبر الموبايل"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "date": "التاريخ",
+      "checkIn": "بصمة الحضور",
+      "checkOut": "بصمة الانصراف",
+      "workHours": "عدد ساعات العمل",
+      "location": "الموقع"
+    },
+    "method": {
+      "finger": "إصبع",
+      "face": "وجه",
+      "mobile": "موبايل GPS"
+    },
+    "mobile": {
+      "title": "تسجيل حضور / انصراف عبر الموبايل",
+      "description": "سجّل الحضور مع تحديد الموقع الجغرافي من أي جهاز.",
+      "checkIn": "تسجيل حضور",
+      "checkOut": "تسجيل انصراف",
+      "todayStatus": "حضور اليوم"
+    }
+  },
+  "leave": {
+    "addNew": "طلب إجازة",
+    "viewTitle": "تفاصيل طلب الإجازة",
+    "summary": "{{count}} طلب · {{pending}} قيد المراجعة · {{approved}} معتمد",
+    "stats": {
+      "total": "إجمالي الطلبات",
+      "pending": "بانتظار الموافقة",
+      "totalDays": "إجمالي الأيام"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "type": "نوع الإجازة",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "days": "الأيام",
+      "status": "الحالة",
+      "reason": "السبب",
+      "actions": "الإجراءات"
+    },
+    "type": {
+      "annual": "إجازة سنوية",
+      "sick": "إجازة مرضية",
+      "unpaid": "إجازة بدون راتب",
+      "emergency": "إجازة طارئة",
+      "other": "أخرى"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "approved": "معتمد",
+      "rejected": "مرفوض",
+      "cancelled": "ملغى"
+    },
+    "actions": {
+      "approve": "اعتماد {{name}}",
+      "reject": "رفض {{name}}",
+      "approveShort": "اعتماد",
+      "rejectShort": "رفض"
+    },
+    "form": {
+      "addTitle": "طلب إجازة جديد",
+      "editTitle": "تعديل طلب الإجازة",
+      "addSubmit": "إرسال الطلب",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف",
+      "reasonEn": "السبب (إنجليزي)",
+      "reasonAr": "السبب (عربي)"
+    },
+    "delete": {
+      "title": "حذف طلب الإجازة",
+      "message": "هل أنت متأكد من حذف طلب الإجازة لـ {{name}}؟",
+      "confirm": "حذف"
+    }
+  },
+  "manager": {
+    "greeting": "بوابة المدير",
+    "subtitle": "اعتمد الطلبات وراقب فريقك من أي مكان.",
+    "stats": {
+      "team": "الفريق",
+      "present": "حاضرون اليوم",
+      "onLeave": "في إجازة"
+    },
+    "pendingLeaves": "طلبات إجازة بانتظار الموافقة",
+    "pendingPenalties": "جزاءات بانتظار الموافقة",
+    "teamAttendance": "حضور الفريق اليوم",
+    "noPendingLeaves": "لا توجد طلبات إجازة معلقة من فريقك.",
+    "present": "حاضر",
+    "absent": "غائب",
+    "viewAll": "عرض الكل"
+  },
+  "workHoursDeduction": {
+    "total": "{{count}} سجل · {{pending}} قيد المراجعة",
+    "addNew": "إضافة خصم",
+    "stats": {
+      "total": "إجمالي السجلات",
+      "totalHours": "إجمالي الساعات المخصومة",
+      "totalAmount": "إجمالي المبلغ"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "date": "التاريخ",
+      "deductedHours": "الساعات المخصومة",
+      "reason": "السبب",
+      "amount": "مبلغ الخصم",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "approved": "معتمد",
+      "rejected": "مرفوض"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة خصم ساعات عمل",
+      "editTitle": "تعديل خصم ساعات العمل",
+      "addSubmit": "إضافة الخصم",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف",
+      "reasonEn": "السبب (إنجليزي)",
+      "reasonAr": "السبب (عربي)"
+    },
+    "view": {
+      "title": "تفاصيل الخصم"
+    },
+    "delete": {
+      "title": "حذف الخصم",
+      "message": "هل أنت متأكد من حذف خصم {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "workHoursAddition": {
+    "total": "{{count}} سجل · {{pending}} قيد المراجعة",
+    "addNew": "إضافة ساعات",
+    "stats": {
+      "total": "إجمالي السجلات",
+      "totalHours": "إجمالي الساعات المضافة",
+      "totalAmount": "إجمالي المبلغ"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "date": "التاريخ",
+      "addedHours": "الساعات المضافة",
+      "reason": "السبب",
+      "amount": "مبلغ الإضافة",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "approved": "معتمد",
+      "rejected": "مرفوض"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة ساعات عمل",
+      "editTitle": "تعديل إضافة ساعات العمل",
+      "addSubmit": "إضافة الساعات",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف",
+      "reasonEn": "السبب (إنجليزي)",
+      "reasonAr": "السبب (عربي)"
+    },
+    "view": {
+      "title": "تفاصيل الإضافة"
+    },
+    "delete": {
+      "title": "حذف الإضافة",
+      "message": "هل أنت متأكد من حذف إضافة {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "employeeRegistration": {
+    "total": "{{count}} سجل قيد",
+    "addNew": "إضافة قيد",
+    "stats": {
+      "total": "إجمالي السجلات",
+      "active": "نشط",
+      "pending": "قيد المراجعة"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "nationalId": "الرقم القومي",
+      "registrationDate": "تاريخ القيد",
+      "jobTitle": "الوظيفة",
+      "department": "الإدارة",
+      "contractType": "نوع العقد",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "active": "نشط",
+      "suspended": "موقوف",
+      "terminated": "منتهي"
+    },
+    "contractType": {
+      "permanent": "دائم",
+      "temporary": "مؤقت",
+      "contract": "تعاقد"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة قيد عامل",
+      "editTitle": "تعديل قيد العامل",
+      "addSubmit": "إضافة القيد",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف",
+      "jobTitleEn": "الوظيفة (إنجليزي)",
+      "jobTitleAr": "الوظيفة (عربي)",
+      "departmentEn": "الإدارة (إنجليزي)",
+      "departmentAr": "الإدارة (عربي)"
+    },
+    "view": {
+      "title": "تفاصيل القيد"
+    },
+    "delete": {
+      "title": "حذف القيد",
+      "message": "هل أنت متأكد من حذف قيد {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "workInterruption": {
+    "total": "{{count}} سجل · {{pending}} قيد المراجعة",
+    "addNew": "إضافة انقطاع",
+    "daysCount": "{{count}} يوم",
+    "daysCount_one": "يوم واحد",
+    "stats": {
+      "total": "إجمالي السجلات",
+      "totalDays": "إجمالي أيام الانقطاع",
+      "approved": "معتمد"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "days": "عدد الأيام",
+      "type": "نوع الانقطاع",
+      "reason": "السبب",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "type": {
+      "absence": "غياب",
+      "leave": "إجازة",
+      "sick": "إجازة مرضية",
+      "unauthorized": "غير مصرح",
+      "other": "أخرى"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "approved": "معتمد",
+      "rejected": "مرفوض"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة انقطاع عن العمل",
+      "editTitle": "تعديل انقطاع العمل",
+      "addSubmit": "إضافة السجل",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف",
+      "reasonEn": "السبب (إنجليزي)",
+      "reasonAr": "السبب (عربي)"
+    },
+    "view": {
+      "title": "تفاصيل الانقطاع"
+    },
+    "delete": {
+      "title": "حذف السجل",
+      "message": "هل أنت متأكد من حذف سجل انقطاع {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "penalties": {
+    "total": "{{count}} سجل · {{pending}} قيد المراجعة",
+    "addNew": "إضافة جزاء",
+    "noAmount": "—",
+    "stats": {
+      "total": "إجمالي الجزاءات",
+      "totalAmount": "إجمالي مبالغ الجزاءات",
+      "applied": "مطبق"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "date": "التاريخ",
+      "type": "نوع الجزاء",
+      "amount": "المبلغ",
+      "reason": "السبب",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "type": {
+      "warning": "إنذار",
+      "deduction": "خصم مالي",
+      "suspension": "إيقاف",
+      "termination": "فصل",
+      "other": "أخرى"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "approved": "معتمد",
+      "rejected": "مرفوض",
+      "applied": "مطبق"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة جزاء",
+      "editTitle": "تعديل الجزاء",
+      "addSubmit": "إضافة الجزاء",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف",
+      "reasonEn": "السبب (إنجليزي)",
+      "reasonAr": "السبب (عربي)"
+    },
+    "view": {
+      "title": "تفاصيل الجزاء"
+    },
+    "delete": {
+      "title": "حذف الجزاء",
+      "message": "هل أنت متأكد من حذف جزاء {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "salaries": {
+    "total": "{{count}} سجل · {{pending}} قيد المراجعة",
+    "addNew": "إضافة مرتب",
+    "stats": {
+      "total": "إجمالي السجلات",
+      "totalPaid": "إجمالي المدفوع (صافي)",
+      "paid": "سجلات مدفوعة"
+    },
+    "payroll": {
+      "groups": {
+        "employeeInfo": "بيانات الموظف"
+      }
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "month": "الشهر",
+      "basicSalary": "الراتب الأساسي",
+      "allowances": "البدلات",
+      "overtime": "العمل الإضافي",
+      "deductions": "الخصومات",
+      "netSalary": "صافي الراتب",
+      "paymentDate": "تاريخ الدفع",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "approved": "معتمد",
+      "paid": "مدفوع",
+      "cancelled": "ملغى"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة سجل مرتب",
+      "editTitle": "تعديل سجل المرتب",
+      "addSubmit": "إضافة السجل",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف"
+    },
+    "view": {
+      "title": "تفاصيل المرتب"
+    },
+    "delete": {
+      "title": "حذف سجل المرتب",
+      "message": "هل أنت متأكد من حذف سجل مرتب {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "missions": {
+    "total": "{{count}} سجل · {{pending}} قيد المراجعة",
+    "addNew": "إضافة مأمورية",
+    "daysCount": "{{count}} يوم",
+    "stats": {
+      "total": "إجمالي المأموريات",
+      "active": "مأموريات جارية",
+      "totalAllowance": "إجمالي البدلات"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "destination": "الوجهة",
+      "purpose": "الغرض",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "missionDays": "الأيام",
+      "allowance": "البدل",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "approved": "معتمد",
+      "in_progress": "جارية",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة مأمورية",
+      "editTitle": "تعديل المأمورية",
+      "addSubmit": "إضافة المأمورية",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف",
+      "destinationEn": "الوجهة (إنجليزي)",
+      "destinationAr": "الوجهة (عربي)",
+      "purposeEn": "الغرض (إنجليزي)",
+      "purposeAr": "الغرض (عربي)"
+    },
+    "view": {
+      "title": "تفاصيل المأمورية"
+    },
+    "delete": {
+      "title": "حذف المأمورية",
+      "message": "هل أنت متأكد من حذف مأمورية {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "insurance": {
+    "total": "{{count}} سجل · {{pending}} قيد المراجعة",
+    "addNew": "إضافة تأمين",
+    "stats": {
+      "total": "إجمالي الوثائق",
+      "active": "وثائق سارية",
+      "totalPremium": "الأقساط الشهرية (السارية)"
+    },
+    "table": {
+      "id": "الرقم",
+      "employee": "الموظف",
+      "type": "نوع التأمين",
+      "provider": "شركة التأمين",
+      "policyNumber": "رقم الوثيقة",
+      "startDate": "تاريخ البداية",
+      "endDate": "تاريخ النهاية",
+      "monthlyPremium": "القسط الشهري",
+      "coverageAmount": "مبلغ التغطية",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "type": {
+      "social": "تأمينات اجتماعية",
+      "health": "تأمين صحي",
+      "life": "تأمين على الحياة",
+      "accident": "تأمين ضد الحوادث",
+      "other": "أخرى"
+    },
+    "status": {
+      "pending": "قيد المراجعة",
+      "active": "ساري",
+      "expired": "منتهي",
+      "cancelled": "ملغى"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة وثيقة تأمين",
+      "editTitle": "تعديل وثيقة التأمين",
+      "addSubmit": "إضافة الوثيقة",
+      "editSubmit": "حفظ التعديلات",
+      "employee": "الموظف",
+      "selectEmployee": "اختر الموظف",
+      "providerEn": "شركة التأمين (إنجليزي)",
+      "providerAr": "شركة التأمين (عربي)"
+    },
+    "view": {
+      "title": "تفاصيل التأمين"
+    },
+    "delete": {
+      "title": "حذف وثيقة التأمين",
+      "message": "هل أنت متأكد من حذف وثيقة تأمين {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "shifts": {
+    "total": "{{count}} وردية · {{inactive}} غير نشطة",
+    "addNew": "إضافة وردية",
+    "hoursCount": "{{count}} ساعة",
+    "stats": {
+      "total": "إجمالي الورديات",
+      "active": "الورديات النشطة",
+      "shiftDuration": "مدة الوردية"
+    },
+    "table": {
+      "id": "الرقم",
+      "name": "اسم الوردية",
+      "startTime": "وقت البداية",
+      "endTime": "وقت النهاية",
+      "shiftHours": "المدة",
+      "workingDays": "أيام العمل",
+      "status": "الحالة",
+      "actions": "الإجراءات"
+    },
+    "status": {
+      "active": "نشطة",
+      "inactive": "غير نشطة"
+    },
+    "actions": {
+      "view": "عرض {{name}}",
+      "edit": "تعديل {{name}}",
+      "delete": "حذف {{name}}"
+    },
+    "form": {
+      "addTitle": "إضافة وردية",
+      "editTitle": "تعديل الوردية",
+      "addSubmit": "إضافة الوردية",
+      "editSubmit": "حفظ التعديلات",
+      "nameEn": "اسم الوردية (إنجليزي)",
+      "nameAr": "اسم الوردية (عربي)",
+      "workingDaysEn": "أيام العمل (إنجليزي)",
+      "workingDaysAr": "أيام العمل (عربي)",
+      "endTimeHint": "يُحسب تلقائياً: {{hours}} ساعات بعد البداية (تنتهي الساعة {{time}})"
+    },
+    "view": {
+      "title": "تفاصيل الوردية"
+    },
+    "delete": {
+      "title": "حذف الوردية",
+      "message": "هل أنت متأكد من حذف {{name}}؟",
+      "warning": "لا يمكن التراجع عن هذا الإجراء.",
+      "confirm": "حذف"
+    }
+  },
+  "dashboard": {
+    "charts": {
+      "attendance": "الحضور الأسبوعي",
+      "attendancePresent": "حاضر",
+      "attendanceAbsent": "غائب",
+      "departmentsTitle": "الموظفون حسب القسم",
+      "payroll": "المرتبات الشهرية",
+      "leave": "طلبات الإجازة",
+      "leaveApproved": "معتمد",
+      "leavePending": "قيد المراجعة",
+      "leaveRejected": "مرفوض",
+      "days": {
+        "sun": "الأحد",
+        "mon": "الإثنين",
+        "tue": "الثلاثاء",
+        "wed": "الأربعاء",
+        "thu": "الخميس",
+        "fri": "الجمعة",
+        "sat": "السبت"
+      },
+      "months": {
+        "jan": "يناير",
+        "feb": "فبراير",
+        "mar": "مارس",
+        "apr": "أبريل",
+        "may": "مايو",
+        "jun": "يونيو"
+      },
+      "departments": {
+        "hr": "الموارد البشرية",
+        "it": "تقنية المعلومات",
+        "finance": "المالية",
+        "operations": "العمليات",
+        "sales": "المبيعات",
+        "other": "أخرى"
+      }
+    }
+  },
+  "stats": {
+    "totalEmployees": "إجمالي الموظفين",
+    "presentToday": "الحاضرون اليوم",
+    "onLeave": "في إجازة",
+    "openPositions": "الوظائف الشاغرة",
+    "employeesChange": "+12 هذا الشهر",
+    "attendanceRate": "93% نسبة الحضور",
+    "leavePending": "7 بانتظار الموافقة",
+    "interviewsToday": "3 مقابلات اليوم"
+  },
+  "gettingStarted": {
+    "title": "البداية",
+    "description": "استخدم الشريط الجانبي للتنقل في بوابة الموارد البشرية. على سطح المكتب، انقر على السهم لتصغيره إلى أيقونات فقط. على الجوال، اضغط زر القائمة لإظهار الشريط الجانبي بحركة سلسة."
+  },
+  "user": {
+    "name": "المسؤول",
+    "email": "admin@company.com",
+    "signOut": "تسجيل الخروج"
+  },
+  "sidebar": {
+    "close": "إغلاق الشريط الجانبي",
+    "expand": "توسيع الشريط الجانبي",
+    "collapse": "تصغير الشريط الجانبي",
+    "open": "فتح الشريط الجانبي"
+  },
+  "language": {
+    "label": "اللغة",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "theme": {
+    "switchToDark": "التبديل إلى الوضع الداكن",
+    "switchToLight": "التبديل إلى الوضع الفاتح"
+  }
+}

@@ -1,0 +1,944 @@
+{
+  "app": {
+    "title": "HR System",
+    "subtitle": "Admin Portal"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "employees": "Employees",
+    "fingerprint": "Fingerprint",
+    "leave": "Leave Management",
+    "manager": "Manager Mobile",
+    "workHoursDeduction": "Work Hours Deduction",
+    "workHoursAddition": "Work Hours Addition",
+    "employeeRegistration": "Employee Registration Record",
+    "workInterruption": "Work Interruption",
+    "penalties": "Penalties",
+    "salaries": "Salaries",
+    "missions": "Missions",
+    "insurance": "Insurance",
+    "shifts": "Shifts"
+  },
+  "header": {
+    "dashboard": "Dashboard",
+    "welcome": "Welcome back — here's your overview"
+  },
+  "login": {
+    "companyName": "MA Human Resources Company",
+    "badge": "Secure HR Portal",
+    "title": "Manage your workforce with confidence",
+    "subtitle": "Sign in to access employee records, payroll, attendance, and all HR operations in one place.",
+    "formTitle": "Welcome back",
+    "formSubtitle": "Enter your credentials to continue",
+    "email": "Email address",
+    "emailPlaceholder": "you@company.com",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "signIn": "Sign in",
+    "signingIn": "Signing in...",
+    "invalidCredentials": "Invalid email or password. Please try again.",
+    "demoHint": "Demo: admin@mahrc.com / admin123",
+    "features": {
+      "secure": {
+        "title": "Secure access",
+        "description": "Protected sessions keep your HR data safe."
+      },
+      "fast": {
+        "title": "Fast workflow",
+        "description": "Jump straight into dashboards and records."
+      },
+      "bilingual": {
+        "title": "Arabic & English",
+        "description": "Switch languages anytime from the portal."
+      }
+    }
+  },
+  "pages": {
+    "emptyDescription": "This page is under construction. Content will be added soon."
+  },
+  "common": {
+    "close": "Close",
+    "cancel": "Cancel",
+    "softDeleteWarning": "The record will be marked as deleted and hidden from the list."
+  },
+  "filters": {
+    "all": "All",
+    "status": "Status",
+    "employee": "Employee",
+    "department": "Department",
+    "type": "Type",
+    "method": "Method",
+    "month": "Month",
+    "contractType": "Contract Type",
+    "attendance": "Attendance",
+    "penalties": "Penalties",
+    "period": "Period",
+    "fromDate": "From date",
+    "toDate": "To date",
+    "clear": "Clear filters",
+    "search": "Search",
+    "searchPlaceholder": "Search table...",
+    "clearSearch": "Clear search",
+    "withPenalties": "With penalties",
+    "withoutPenalties": "Without penalties",
+    "employeeStatus": "Employee Status",
+    "activeEmployees": "Active",
+    "removedEmployees": "Removed",
+    "blockedEmployees": "Blocked",
+    "removedOrBlockedEmployees": "Removed or blocked",
+    "checkedIn": "Checked in",
+    "checkedOut": "Checked out",
+    "incomplete": "Incomplete",
+    "period3m": "Last 3 months",
+    "period6m": "Last 6 months",
+    "periodAll": "All time"
+  },
+  "export": {
+    "pdf": "Export PDF",
+    "excel": "Export Excel"
+  },
+  "pagination": {
+    "showing": "Showing {{from}}–{{to}} of {{total}}",
+    "rowsPerPage": "Rows per page",
+    "first": "First page",
+    "previous": "Previous page",
+    "next": "Next page",
+    "last": "Last page",
+    "page": "Page {{page}}",
+    "pageOf": "{{current}} / {{total}}",
+    "noResults": "No results found"
+  },
+  "employees": {
+    "total": "{{count}} employees",
+    "addNew": "Add Employee",
+    "table": {
+      "id": "ID",
+      "name": "Employee Name",
+      "jobTitle": "Job Title",
+      "subDepartment": "Sub-Department",
+      "directManager": "Direct Manager",
+      "salary": "Salary",
+      "deductions": "Deductions",
+      "penalties": "Penalties",
+      "actions": "Actions"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}",
+      "block": "Block {{name}}",
+      "unblock": "Unblock {{name}}",
+      "restore": "Restore {{name}}"
+    },
+    "badges": {
+      "deleted": "Deleted",
+      "blocked": "Blocked"
+    },
+    "form": {
+      "addTitle": "Add New Employee",
+      "editTitle": "Edit Employee",
+      "addSubmit": "Add Employee",
+      "editSubmit": "Save Changes",
+      "nameEn": "Name (English)",
+      "nameAr": "Name (Arabic)",
+      "jobTitleEn": "Job Title (English)",
+      "jobTitleAr": "Job Title (Arabic)",
+      "subDepartmentEn": "Sub-Department (English)",
+      "subDepartmentAr": "Sub-Department (Arabic)",
+      "directManager": "Direct Manager",
+      "dateOfBirth": "Date of Birth",
+      "militaryStatus": "Military Service Status",
+      "healthCertificate": "Health Certificate",
+      "idCardImage": "ID Card Photo",
+      "licenseImage": "License Photo",
+      "birthCertificateImage": "Birth Certificate",
+      "maritalStatus": "Marital Status"
+    },
+    "documents": {
+      "title": "Documents & Photos",
+      "uploadHint": "Click to upload image",
+      "uploadFormats": "JPG, PNG, WEBP — max 5MB",
+      "browse": "Browse file",
+      "remove": "Remove image",
+      "notUploaded": "No image uploaded",
+      "invalidType": "Please upload an image file only.",
+      "tooLarge": "Image must be smaller than 5MB.",
+      "uploadFailed": "Failed to upload image. Try again."
+    },
+    "militaryStatus": {
+      "completed": "Completed Service",
+      "exempted": "Exempted",
+      "postponed": "Postponed",
+      "not_applicable": "Not Applicable"
+    },
+    "maritalStatus": {
+      "single": "Single",
+      "married": "Married",
+      "divorced": "Divorced",
+      "widowed": "Widowed"
+    },
+    "noManager": "No manager",
+    "payroll": {
+      "groups": {
+        "jobData": "Job Data",
+        "compensation": "Monthly Service Compensation",
+        "deductions": "Deductions"
+      },
+      "cols": {
+        "serial": "No.",
+        "jobNumber": "Job ID",
+        "name": "Name",
+        "department": "Department",
+        "branch": "Branch",
+        "jobTitle": "Position",
+        "dailySalary": "Daily Salary",
+        "workDays": "Days",
+        "overtimeHours": "Overtime Hours",
+        "representationAllowance": "Representation Allowance",
+        "total": "Total",
+        "penalties": "Penalties",
+        "formula": "Formula",
+        "fingerprintDeduction": "Fingerprint Deduction",
+        "cashDeduction": "Cash Deduction / Orders",
+        "cashierShortage": "Cashier Shortage",
+        "costDeduction": "Cost Deduction",
+        "temporaryAdvance": "Temporary Advance",
+        "permanentAdvance": "Permanent Advance",
+        "socialInsurance": "Social Insurance",
+        "netSalary": "Net Salary",
+        "signature": "Signature",
+        "overtimeValue": "Overtime Value"
+      }
+    },
+    "payslip": {
+      "selectMonth": "Month",
+      "jobCode": "Job Code",
+      "name": "Name",
+      "daysValue": "Days Value",
+      "overtimeHoursShort": "Overtime Hrs",
+      "overtimeValueShort": "Value",
+      "totalEarnings": "Total Earnings",
+      "penaltiesValue": "Penalties Value",
+      "fingerprintDeductionValue": "Fingerprint Deduction Value",
+      "cashDeductionShort": "Cash Deduction",
+      "totalDeductions": "Total Deductions",
+      "netSalary": "Net Monthly Salary",
+      "exportTitle": "Payroll Entry"
+    },
+    "delete": {
+      "title": "Delete Employee",
+      "message": "Are you sure you want to delete {{name}}?",
+      "warning": "The employee will be marked as deleted and remain in the list.",
+      "confirm": "Delete"
+    },
+    "block": {
+      "title": "Block Employee",
+      "message": "Are you sure you want to block {{name}}? They will not be able to access the system.",
+      "confirm": "Block",
+      "unblockTitle": "Unblock Employee",
+      "unblockMessage": "Are you sure you want to unblock {{name}}?",
+      "unblockConfirm": "Unblock"
+    },
+    "restore": {
+      "title": "Restore Employee",
+      "message": "Are you sure you want to restore {{name}}? They will be marked as active again.",
+      "confirm": "Restore"
+    },
+    "details": {
+      "back": "Back to Employees",
+      "edit": "Edit",
+      "delete": "Delete",
+      "block": "Block",
+      "unblock": "Unblock",
+      "restore": "Restore",
+      "netSalary": "Net Salary"
+    },
+    "profile": {
+      "email": "Email",
+      "phone": "Phone",
+      "hireDate": "Hire Date",
+      "status": "Status",
+      "annualBalance": "Annual Leave Balance",
+      "sickBalance": "Sick Leave Balance",
+      "tabs": {
+        "overview": "Overview",
+        "attendance": "Attendance",
+        "leave": "Leave",
+        "payroll": "Payroll",
+        "penalties": "Penalties"
+      },
+      "noAttendance": "No attendance records for this employee.",
+      "noLeave": "No leave requests for this employee.",
+      "noPayroll": "No payroll records for this employee.",
+      "noPenalties": "No penalties for this employee."
+    },
+    "status": {
+      "active": "Active",
+      "on_leave": "On Leave",
+      "terminated": "Terminated"
+    }
+  },
+  "fingerprint": {
+    "hint": "Employees can check in and out using fingerprint, face recognition, or mobile GPS location.",
+    "notRecorded": "Not recorded",
+    "stats": {
+      "total": "Total Records",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "avgHours": "Avg. Work Hours",
+      "mobile": "Mobile Check-ins"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "date": "Date",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "workHours": "Work Hours",
+      "location": "Location"
+    },
+    "method": {
+      "finger": "Finger",
+      "face": "Face",
+      "mobile": "Mobile GPS"
+    },
+    "mobile": {
+      "title": "Mobile Check-in / Check-out",
+      "description": "Record attendance with GPS location from any device.",
+      "checkIn": "Check In",
+      "checkOut": "Check Out",
+      "todayStatus": "Today's attendance"
+    }
+  },
+  "leave": {
+    "addNew": "Request Leave",
+    "viewTitle": "Leave Request Details",
+    "summary": "{{count}} requests · {{pending}} pending · {{approved}} approved",
+    "stats": {
+      "total": "Total Requests",
+      "pending": "Pending Approval",
+      "totalDays": "Total Days"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "type": "Leave Type",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "days": "Days",
+      "status": "Status",
+      "reason": "Reason",
+      "actions": "Actions"
+    },
+    "type": {
+      "annual": "Annual Leave",
+      "sick": "Sick Leave",
+      "unpaid": "Unpaid Leave",
+      "emergency": "Emergency Leave",
+      "other": "Other"
+    },
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "approve": "Approve {{name}}",
+      "reject": "Reject {{name}}",
+      "approveShort": "Approve",
+      "rejectShort": "Reject"
+    },
+    "form": {
+      "addTitle": "New Leave Request",
+      "editTitle": "Edit Leave Request",
+      "addSubmit": "Submit Request",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee",
+      "reasonEn": "Reason (English)",
+      "reasonAr": "Reason (Arabic)"
+    },
+    "delete": {
+      "title": "Delete Leave Request",
+      "message": "Are you sure you want to delete the leave request for {{name}}?",
+      "confirm": "Delete"
+    }
+  },
+  "manager": {
+    "greeting": "Manager Portal",
+    "subtitle": "Approve requests and monitor your team on the go.",
+    "stats": {
+      "team": "Team",
+      "present": "Present Today",
+      "onLeave": "On Leave"
+    },
+    "pendingLeaves": "Pending Leave Approvals",
+    "pendingPenalties": "Pending Penalties",
+    "teamAttendance": "Team Attendance Today",
+    "noPendingLeaves": "No pending leave requests from your team.",
+    "present": "Present",
+    "absent": "Absent",
+    "viewAll": "View all"
+  },
+  "workHoursDeduction": {
+    "total": "{{count}} records · {{pending}} pending",
+    "addNew": "Add Deduction",
+    "stats": {
+      "total": "Total Records",
+      "totalHours": "Total Deducted Hours",
+      "totalAmount": "Total Amount"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "date": "Date",
+      "deductedHours": "Deducted Hours",
+      "reason": "Reason",
+      "amount": "Deduction Amount",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Work Hours Deduction",
+      "editTitle": "Edit Work Hours Deduction",
+      "addSubmit": "Add Deduction",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee",
+      "reasonEn": "Reason (English)",
+      "reasonAr": "Reason (Arabic)"
+    },
+    "view": {
+      "title": "Deduction Details"
+    },
+    "delete": {
+      "title": "Delete Deduction",
+      "message": "Are you sure you want to delete the deduction for {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "workHoursAddition": {
+    "total": "{{count}} records · {{pending}} pending",
+    "addNew": "Add Addition",
+    "stats": {
+      "total": "Total Records",
+      "totalHours": "Total Added Hours",
+      "totalAmount": "Total Amount"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "date": "Date",
+      "addedHours": "Added Hours",
+      "reason": "Reason",
+      "amount": "Addition Amount",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Work Hours Addition",
+      "editTitle": "Edit Work Hours Addition",
+      "addSubmit": "Add Addition",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee",
+      "reasonEn": "Reason (English)",
+      "reasonAr": "Reason (Arabic)"
+    },
+    "view": {
+      "title": "Addition Details"
+    },
+    "delete": {
+      "title": "Delete Addition",
+      "message": "Are you sure you want to delete the addition for {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "employeeRegistration": {
+    "total": "{{count}} registration records",
+    "addNew": "Add Registration",
+    "stats": {
+      "total": "Total Records",
+      "active": "Active",
+      "pending": "Pending Review"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "nationalId": "National ID",
+      "registrationDate": "Registration Date",
+      "jobTitle": "Job Title",
+      "department": "Department",
+      "contractType": "Contract Type",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "pending": "Pending",
+      "active": "Active",
+      "suspended": "Suspended",
+      "terminated": "Terminated"
+    },
+    "contractType": {
+      "permanent": "Permanent",
+      "temporary": "Temporary",
+      "contract": "Contract"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Employee Registration",
+      "editTitle": "Edit Employee Registration",
+      "addSubmit": "Add Registration",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee",
+      "jobTitleEn": "Job Title (English)",
+      "jobTitleAr": "Job Title (Arabic)",
+      "departmentEn": "Department (English)",
+      "departmentAr": "Department (Arabic)"
+    },
+    "view": {
+      "title": "Registration Details"
+    },
+    "delete": {
+      "title": "Delete Registration",
+      "message": "Are you sure you want to delete the registration for {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "workInterruption": {
+    "total": "{{count}} records · {{pending}} pending",
+    "addNew": "Add Interruption",
+    "daysCount": "{{count}} days",
+    "daysCount_one": "{{count}} day",
+    "stats": {
+      "total": "Total Records",
+      "totalDays": "Total Interruption Days",
+      "approved": "Approved"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "days": "Days",
+      "type": "Type",
+      "reason": "Reason",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "type": {
+      "absence": "Absence",
+      "leave": "Leave",
+      "sick": "Sick Leave",
+      "unauthorized": "Unauthorized",
+      "other": "Other"
+    },
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Work Interruption",
+      "editTitle": "Edit Work Interruption",
+      "addSubmit": "Add Record",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee",
+      "reasonEn": "Reason (English)",
+      "reasonAr": "Reason (Arabic)"
+    },
+    "view": {
+      "title": "Interruption Details"
+    },
+    "delete": {
+      "title": "Delete Record",
+      "message": "Are you sure you want to delete the interruption record for {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "penalties": {
+    "total": "{{count}} records · {{pending}} pending",
+    "addNew": "Add Penalty",
+    "noAmount": "—",
+    "stats": {
+      "total": "Total Penalties",
+      "totalAmount": "Total Penalty Amount",
+      "applied": "Applied"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "date": "Date",
+      "type": "Penalty Type",
+      "amount": "Amount",
+      "reason": "Reason",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "type": {
+      "warning": "Warning",
+      "deduction": "Financial Deduction",
+      "suspension": "Suspension",
+      "termination": "Termination",
+      "other": "Other"
+    },
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "applied": "Applied"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Penalty",
+      "editTitle": "Edit Penalty",
+      "addSubmit": "Add Penalty",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee",
+      "reasonEn": "Reason (English)",
+      "reasonAr": "Reason (Arabic)"
+    },
+    "view": {
+      "title": "Penalty Details"
+    },
+    "delete": {
+      "title": "Delete Penalty",
+      "message": "Are you sure you want to delete the penalty for {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "salaries": {
+    "total": "{{count}} records · {{pending}} pending",
+    "addNew": "Add Salary",
+    "stats": {
+      "total": "Total Records",
+      "totalPaid": "Total Paid (Net)",
+      "paid": "Paid Records"
+    },
+    "payroll": {
+      "groups": {
+        "employeeInfo": "Employee Info"
+      }
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "month": "Month",
+      "basicSalary": "Basic Salary",
+      "allowances": "Allowances",
+      "overtime": "Overtime",
+      "deductions": "Deductions",
+      "netSalary": "Net Salary",
+      "paymentDate": "Payment Date",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "paid": "Paid",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Salary Record",
+      "editTitle": "Edit Salary Record",
+      "addSubmit": "Add Record",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee"
+    },
+    "view": {
+      "title": "Salary Details"
+    },
+    "delete": {
+      "title": "Delete Salary Record",
+      "message": "Are you sure you want to delete the salary record for {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "missions": {
+    "total": "{{count}} records · {{pending}} pending",
+    "addNew": "Add Mission",
+    "daysCount": "{{count}} days",
+    "stats": {
+      "total": "Total Missions",
+      "active": "Active Missions",
+      "totalAllowance": "Total Allowances"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "destination": "Destination",
+      "purpose": "Purpose",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "missionDays": "Days",
+      "allowance": "Allowance",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "in_progress": "In Progress",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Mission",
+      "editTitle": "Edit Mission",
+      "addSubmit": "Add Mission",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee",
+      "destinationEn": "Destination (English)",
+      "destinationAr": "Destination (Arabic)",
+      "purposeEn": "Purpose (English)",
+      "purposeAr": "Purpose (Arabic)"
+    },
+    "view": {
+      "title": "Mission Details"
+    },
+    "delete": {
+      "title": "Delete Mission",
+      "message": "Are you sure you want to delete the mission for {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "insurance": {
+    "total": "{{count}} records · {{pending}} pending",
+    "addNew": "Add Insurance",
+    "stats": {
+      "total": "Total Policies",
+      "active": "Active Policies",
+      "totalPremium": "Monthly Premiums (Active)"
+    },
+    "table": {
+      "id": "ID",
+      "employee": "Employee",
+      "type": "Insurance Type",
+      "provider": "Provider",
+      "policyNumber": "Policy No.",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "monthlyPremium": "Monthly Premium",
+      "coverageAmount": "Coverage Amount",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "type": {
+      "social": "Social Insurance",
+      "health": "Health Insurance",
+      "life": "Life Insurance",
+      "accident": "Accident Insurance",
+      "other": "Other"
+    },
+    "status": {
+      "pending": "Pending",
+      "active": "Active",
+      "expired": "Expired",
+      "cancelled": "Cancelled"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Insurance Policy",
+      "editTitle": "Edit Insurance Policy",
+      "addSubmit": "Add Policy",
+      "editSubmit": "Save Changes",
+      "employee": "Employee",
+      "selectEmployee": "Select employee",
+      "providerEn": "Provider (English)",
+      "providerAr": "Provider (Arabic)"
+    },
+    "view": {
+      "title": "Insurance Details"
+    },
+    "delete": {
+      "title": "Delete Insurance Policy",
+      "message": "Are you sure you want to delete the insurance policy for {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "shifts": {
+    "total": "{{count}} shifts · {{inactive}} inactive",
+    "addNew": "Add Shift",
+    "hoursCount": "{{count}} hrs",
+    "stats": {
+      "total": "Total Shifts",
+      "active": "Active Shifts",
+      "shiftDuration": "Shift Duration"
+    },
+    "table": {
+      "id": "ID",
+      "name": "Shift Name",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "shiftHours": "Duration",
+      "workingDays": "Working Days",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "actions": {
+      "view": "View {{name}}",
+      "edit": "Edit {{name}}",
+      "delete": "Delete {{name}}"
+    },
+    "form": {
+      "addTitle": "Add Shift",
+      "editTitle": "Edit Shift",
+      "addSubmit": "Add Shift",
+      "editSubmit": "Save Changes",
+      "nameEn": "Shift Name (English)",
+      "nameAr": "Shift Name (Arabic)",
+      "workingDaysEn": "Working Days (English)",
+      "workingDaysAr": "Working Days (Arabic)",
+      "endTimeHint": "Auto-calculated: {{hours}} hrs after start (ends at {{time}})"
+    },
+    "view": {
+      "title": "Shift Details"
+    },
+    "delete": {
+      "title": "Delete Shift",
+      "message": "Are you sure you want to delete {{name}}?",
+      "warning": "This action cannot be undone.",
+      "confirm": "Delete"
+    }
+  },
+  "dashboard": {
+    "charts": {
+      "attendance": "Weekly Attendance",
+      "attendancePresent": "Present",
+      "attendanceAbsent": "Absent",
+      "departmentsTitle": "Employees by Department",
+      "payroll": "Monthly Payroll",
+      "leave": "Leave Requests",
+      "leaveApproved": "Approved",
+      "leavePending": "Pending",
+      "leaveRejected": "Rejected",
+      "days": {
+        "sun": "Sun",
+        "mon": "Mon",
+        "tue": "Tue",
+        "wed": "Wed",
+        "thu": "Thu",
+        "fri": "Fri",
+        "sat": "Sat"
+      },
+      "months": {
+        "jan": "Jan",
+        "feb": "Feb",
+        "mar": "Mar",
+        "apr": "Apr",
+        "may": "May",
+        "jun": "Jun"
+      },
+      "departments": {
+        "hr": "Human Resources",
+        "it": "IT",
+        "finance": "Finance",
+        "operations": "Operations",
+        "sales": "Sales",
+        "other": "Other"
+      }
+    }
+  },
+  "stats": {
+    "totalEmployees": "Total Employees",
+    "presentToday": "Present Today",
+    "onLeave": "On Leave",
+    "openPositions": "Open Positions",
+    "employeesChange": "+12 this month",
+    "attendanceRate": "93% attendance",
+    "leavePending": "7 pending approval",
+    "interviewsToday": "3 interviews today"
+  },
+  "gettingStarted": {
+    "title": "Getting Started",
+    "description": "Use the sidebar to navigate your HR portal. On desktop, click the chevron to collapse it into icon-only mode. On mobile, tap the menu button to slide the sidebar in with a smooth animation."
+  },
+  "user": {
+    "name": "Admin User",
+    "email": "admin@company.com",
+    "signOut": "Sign out"
+  },
+  "sidebar": {
+    "close": "Close sidebar",
+    "expand": "Expand sidebar",
+    "collapse": "Collapse sidebar",
+    "open": "Open sidebar"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "ar": "العربية"
+  },
+  "theme": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
+  }
+}
